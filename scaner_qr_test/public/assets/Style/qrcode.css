@@ -1,0 +1,17 @@
+#scaner #reader {
+  width: 500px;
+  position: relative;
+  padding: 0px; 
+  border: 1px solid silver;
+  background-color: rgb(255, 255, 255);
+}
+
+#reader__status_span{
+  display: none;
+  float: right; 
+  padding: 5px 7px; 
+  font-size: 14px; 
+  background: rgb(238, 238, 255);
+  border: 1px solid rgba(0, 0, 0, 0); 
+  color: rgb(17, 17, 17);
+} 
