@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/Icons-Land-Medical-Equipment-Capsule-Red.ico">
+
+
+    <!-- ======= Style ======= -->
+    <link rel="stylesheet" href="assets/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Style/style.css">
+    <link rel="stylesheet" href="assets/Style/qrcode.css">
+
+    <title>Scaner</title>
+    
+    <style>
+        .marqueefont{
+            font-size: 25px;
+            color: red;
+        }
+    </style>
+    
+</head>
+<body onload="myFunction()">
+<div class="d-flex justify-content-center">
+    <div class="spinner-grow text-primary" id="loader" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <div class="logo">
+                  <a class="navbar-brand" href="https://www.phukethospital.com/th/">
+                    <img src="assets/logo.png">
+                  </a>
+                </div>
+                <button class="navbar-toggler"
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarTogglerDemo02" 
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.phukethospital.com/th/">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.phukethospital.com/th/contact/">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>  
+        </nav>
+    </header>
+
+    <section id="main-st" class="d-flex align-items-center">
+        <div class="container position-relative text-center text-lg-left" data-aos="zoom-in" data-aos-delay="100">
+            <div class="row">
+                <div class="col-sm-7">
+                    <h1><span>Smart drug labels</span></h1>
+                    <h1>| ฉลากยาพูดได้</h1>
+                    <br>
+                    <h2>หมายเหตุ:Software นี้พัฒนาขึ้นเพื่อเพิ่มความสะดวกสำหรับผู้มีปัญหาทางสายตาหรือกรณีฉลากยาเลือนลาง
+                        <br>
+                        <br>
+                        หากเกิดข้อผิดพลาดจากการออกเสียงขอให้ยึดถือความถูกต้องของข้อความบนฉลากเป็นหลัก</h2>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                    <a id="btn-scan-qr" class="play-btn venobox"></a>
+                        <canvas hidden="" id="qr-canvas"></canvas>
+                        <div id="qr-result" hidden=""></div><br>
+                </div>
+                <button class="btn pause-btn text-center" id="btn-stop-qr" hidden="">
+                    <i class="fas fa-closed-captioning"></i>
+                    Close
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">    
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>BPK</span></strong>. All Rights Reserved 
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+                Button Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body>
+
+<!-- jq&js -->
+<script src="assets/jquery/dist/jquery.min.js"></script>
+<script src="assets/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+<script src="js/index.js"></script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.8/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</html>
